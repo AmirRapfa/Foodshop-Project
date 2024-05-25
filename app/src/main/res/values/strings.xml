@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Duni_Food</string>
+    <string name="dunifood_app">DuniFood App</string>
+    <string name="todo">TODO</string>
+    <string name="find_food">find food ...</string>
+    <string name="email">email</string>
+    <string name="enter_how_much_cookies_you_want">Enter How Much Cookies You Want</string>
+    <string name="e_g_8">e.g 8</string>
+    <string name="e_g_5">e.g 5</string>
+    <string name="done">Done</string>
+</resources>

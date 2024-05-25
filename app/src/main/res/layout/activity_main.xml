@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="17dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/product_bold"
+                android:text="DuniFood App"
+                android:textColor="@color/white"
+                android:textSize="25sp"></TextView>
+
+
+            <ImageView
+                android:id="@+id/btn_add_newfood"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_marginEnd="8dp"
+                android:src="@drawable/ic_add"
+                app:tint="?attr/colorOnPrimary">
+
+            </ImageView>
+
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_edittxt"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/product_bold"
+            android:hint="find food ..."
+            android:paddingStart="5dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:background="?attr/colorSurface"
+        android:id="@+id/recyclermain"
+        tools:listitem="@layout/food_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</LinearLayout>
+
+
+
+
+
+
